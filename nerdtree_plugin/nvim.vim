@@ -22,6 +22,7 @@ endfunction
 
 function! NERDTreeRootCd(node) abort
         if a:node.isRoot()
+                call a:node.path.getParent().changeToDir()
                 call nerdtree#ui_glue#upDir(0)
                 return
         endif
