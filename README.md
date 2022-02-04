@@ -3,6 +3,12 @@ Adds [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua) like shortcuts to 
 
 Plugin exists to unify experience when switching between neovim and vim using nvim-tree and NERDTree.
 
+# Installation
+Use your favorite plugin manager, ex. vim-plug
+```
+Plug 'anpavlov/nerdtree-nomenu'
+```
+
 # Mappings
 - `<CR>` on current root will open and cd in the above directory
 - `<C-]>` will open and cd in the directory under the cursor
