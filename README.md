@@ -1,2 +1,12 @@
 # nerdtree-nomenu
-Adds nvim-tree like shortcuts to edit filesystem without opening NERDTree menu
+Adds [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua) like shortcuts to edit filesystem without opening NERDTree menu
+
+Plugin exists to unify experience when switching between neovim and vim using nvim-tree and NERDTree.
+
+# Mappings
+- `<CR>` on current root will open and cd in the above directory
+- `<C-]>` will open and cd in the directory under the cursor
+- `a` to add a file/directory
+- `r` to rename a file/directory
+- `c` to copy file/directory
+- `d` to delete a file/directory
