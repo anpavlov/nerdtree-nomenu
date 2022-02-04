@@ -16,3 +16,9 @@ Plug 'anpavlov/nerdtree-nomenu'
 - `r` to rename a file/directory
 - `c` to copy file/directory
 - `d` to delete a file/directory
+
+# Caveats
+Mapping `c` to copy file will cause pause when entering 'c' key because NERDTree `cd` mapping exists and vim is waiting to check if user types more keys. To fix this you can remap default cd action using `g:NERDTreeMapChdir`. Setting it to empty string `''` will break NERDTree, because NERDTree does not check key for emptiness and will map `:call` instead. So you need to map it to some unused key, for example
+```
+let g:NERDTreeMapChdir = 'z'
+```
